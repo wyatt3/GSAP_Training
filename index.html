@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GSAP</title>
+  </head>
+  <body>
+    <section>
+      <h1>The Basics</h1>
+      <button class="button" onclick="gsapTo()">gsap.to()</button>
+      <div class="object object-1">Object 1</div>
+  
+      <button class="button" onclick="gsapFrom()">gsap.from()</button>
+      <div class="object object-2">Object 2</div>
+  
+      <button class="button" onclick="gsapFromTo()">gsap.fromTo()</button>
+      <div class="object object-3">Object 3</div>
+  
+      <button class="button" onclick="gsapSet()">gsap.set()</button>
+      <div class="object object-4">Object 4</div>
+    </section>
+    <section>
+      <h1>Easing</h1>
+      <button class="button" onclick="gsapBounce()">ease: "bounce"</button>
+      <div class="object object-5">Object 5</div>
+
+      <button class="button" onclick="gsapElastic()">ease: "elastic"</button>
+      <div class="object object-6">Object 6</div>
+
+      <button class="button" onclick="gsapSteps()">ease: "steps"</button>
+      <div class="object object-7">Object 7</div>
+
+      <button class="button" onclick="gsapInOut()">ease: "elastic.inOut"</button>
+      <div class="object object-8">Object 8</div>
+    </section>
+    <section>
+      <h1>Timelines</h1>
+      <h2>Without Timeline</h2>
+      <button class="button" onclick="notTlStart()">Start</button>
+      <div class="object object-9">Object 9</div>
+      <div class="object object-10">Object 10</div>
+      <div class="object object-11">Object 11</div>
+
+      <h2>With Timeline</h2>
+      <div class="flex-row">
+        <button class="button" onclick="tl.play()">Play()</button>
+        <button class="button" onclick="tl.pause()">Pause()</button>
+        <button class="button" onclick="tl.resume()">Resume()</button>
+        <button class="button" onclick="tl.reverse()">Reverse()</button>
+        <button class="button" onclick="tl.seek(0)">Restart()</button>
+      </div>
+      <div class="object object-12">Object 12</div>
+      <div class="object object-13">Object 13</div>
+      <div class="object object-14">Object 14</div>
+    </section>
+    <section>
+      <h1>Callbacks</h1>
+      <button class="button" onclick="gsapOnComplete()">onComplete()</button>
+      <div class="message message-15"></div>
+      <div class="object object-15">Object 15</div>
+      <button class="button" onclick="gsapOnStart()">onStart()</button>
+      <div class="message message-16"></div>
+      <div class="object object-16">Object 16</div>
+      <button class="button" onclick="gsapOnUpdate()">onUpdate()</button>
+      <div class="message message-17"></div>
+      <div class="object object-17">Object 17</div>
+      <div class="flex-row">
+        <button class="button" onclick="tl2.play()">Play()</button>
+        <button class="button" onclick="tl2.reverse()">Reverse()</button>
+      </div>
+      <div class="message message-18"></div>
+      <div class="message message-19"></div>
+      <div class="object object-18">Object 18</div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+
+</html>

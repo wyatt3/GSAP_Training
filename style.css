@@ -1,0 +1,6 @@
+body {background-color: #fafadc}
+.button {padding: 10px 25px;border-radius: 5px; background-color: #ff8888;display: block}
+.object {width: 100px;height: 100px;line-height: 100px;text-align: center; border-radius: 5px;border: solid 1px #000;background-color: #5997d4;margin: 10px;}
+section {margin-bottom:75px;margin-left: 25px;}
+.flex-row {display: flex;flex-direction: row;margin-top: 10px;}
+.message {height: 20px;margin-top: 5px;}
